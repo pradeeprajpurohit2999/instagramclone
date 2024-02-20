@@ -1,9 +1,3 @@
-
-
-function page() {
-  return (
-    <div>Profile</div>
-  )
+export default function Page({ params }: { params: { id: string } }) {
+  return <div>My Id: {params.id}</div>;
 }
-
-export default page
